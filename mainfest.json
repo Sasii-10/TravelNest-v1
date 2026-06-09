@@ -1,0 +1,21 @@
+{
+  "name": "TravelNest Planner",
+  "short_name": "TravelNest",
+  "start_url": "../HTML/index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#ff6b6b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../image 02.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://placehold.co/512x512/ff6b6b/ffffff?text=TravelNest",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

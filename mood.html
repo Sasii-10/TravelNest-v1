@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Ambient Moods</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body id="mood-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section style="margin-bottom:3rem;">
+            <h2>Ambient Relaxation Loops</h2>
+            <p style="margin-bottom:1rem;">Immerse yourself inside programmatic frequency layers mimicking global destinations.</p>
+            <div class="sound-grid">
+                <button class="sound-btn" data-sound="beach">🌊 Beach Waves</button>
+                <button class="sound-btn" data-sound="forest">🌲 Deep Woods</button>
+                <button class="sound-btn" data-sound="city">🏙️ Metropolis Noise</button>
+            </div>
+        </section>
+        <section style="background:white; padding:2rem; border-radius:12px;">
+            <h2>Personal Journey Checklist Log</h2>
+            <p style="margin-bottom:1.5rem;">Mark structural parameters to track targets that you have officially checked or planned out.</p>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+                <label style="display:flex; gap:1rem; align-items:center; font-size:1.1rem;"><input type="checkbox" class="track-checkbox" data-dest="kyoto" style="width:20px; height:20px;"> Kyoto Journey Ledger</label>
+                <label style="display:flex; gap:1rem; align-items:center; font-size:1.1rem;"><input type="checkbox" class="track-checkbox" data-dest="santorini" style="width:20px; height:20px;"> Santorini Coastal Flight</label>
+                <label style="display:flex; gap:1rem; align-items:center; font-size:1.1rem;"><input type="checkbox" class="track-checkbox" data-dest="banff" style="width:20px; height:20px;"> Banff Wilderness Trail</label>
+            </div>
+        </section>
+    </main>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

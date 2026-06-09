@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Helpdesk</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body id="support-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="max-width:800px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:3rem;">
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div style="margin-top:1.5rem;">
+                <div class="accordion-item">
+                    <div class="accordion-header">Is TravelNest free to track itineraries? <span>+</span></div>
+                    <div class="accordion-body"><p>Yes, TravelNest is a fully client-side framework utilizing browser storage architecture. It is completely free of charge.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Can I back up my calculated budget matrices? <span>+</span></div>
+                    <div class="accordion-body"><p>Data fields automatically save directly inside browser configurations via localStorage instances until temporary site files are cleared.</p></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Support Intake & Form Submissions</h2>
+            <form id="support-form" style="background:white; padding:2rem; border-radius:12px; margin-top:1rem;">
+                <div class="form-group"><label>Full Name</label><input type="text" id="sup-name" class="form-control" required placeholder="Jane Doe"></div>
+                <div class="form-group"><label>Email Endpoint Address</label><input type="email" id="sup-email" class="form-control" required placeholder="jane@example.com"></div>
+                <div class="form-group"><label>Feedback Message</label><textarea id="sup-msg" class="form-control" rows="5" required placeholder="Write details here (minimum 10 characters)..."></textarea></div>
+                <button type="submit" class="btn-primary" style="width:100%;">File Help Ticket</button>
+                <div id="sup-success" style="display:none; color:var(--success); margin-top:1rem; font-weight:600; text-align:center;">Ticket processed and updated locally. Thank you!</div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">&copy; 2026 TravelNest. Educational Web Application.</div>
+    </footer>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

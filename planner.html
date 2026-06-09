@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Budget Planner</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body id="planner-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="max-width:600px; margin:0 auto;">
+        <h2>Trip Budget Matrix</h2>
+        <form id="budget-form" style="background:white; padding:2rem; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.02);">
+            <div class="form-group"><label>Destination Target Name</label><input type="text" id="plan-dest" class="form-control" required placeholder="e.g. Kyoto"></div>
+            <div class="form-group"><label>Estimated Duration (Days)</label><input type="number" id="plan-days" class="form-control" required min="1"></div>
+            <div class="form-group"><label>Planned Daily Budget ($)</label><input type="number" id="plan-daily" class="form-control" required min="1"></div>
+            <button type="submit" class="btn-primary" style="width:100%;">Calculate Projected Costs</button>
+        </form>
+        <section id="planner-results" style="margin-top:2rem; background:white; padding:2rem; border-radius:12px;">
+            <h3>Calculated Diagnostics</h3>
+            <p>Projected Total Trip Cost: <strong id="calc-total">$0</strong></p>
+            <p>Dynamic Budget Classification: <strong id="calc-tier">N/A</strong></p>
+            <div class="progress-container"><div id="progress-bar" class="progress-bar"></div></div>
+        </section>
+    </main>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

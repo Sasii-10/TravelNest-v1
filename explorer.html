@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Destination Explorer</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body id="explorer-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Destination Catalog</h2>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <input type="text" id="search-name" class="form-control" placeholder="Search destinations by name..." style="flex:2; min-width:200px;">
+            <select id="filter-continent" class="form-control" style="flex:1; min-width:150px;">
+                <option value="">All Continents</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+            </select>
+        </div>
+        <div id="explorer-grid" class="grid-layout"></div>
+    </main>
+
+    <div id="dest-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 id="modal-title">Destination</h2>
+            <p id="modal-desc" style="margin-bottom:1rem;"></p>
+            <h3>Popular Attractions</h3>
+            <ul id="modal-attractions" style="list-style:disc; margin-left:1.5rem; margin-bottom:1.5rem;"></ul>
+            <h3>Estimated Cost Profile</h3>
+            <table>
+                <thead><tr><th>Expense Segment</th><th>Average Cost</th></tr></thead>
+                <tbody id="modal-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

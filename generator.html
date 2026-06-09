@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Roulette Matcher</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body id="generator-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="max-width:600px; margin:0 auto; text-align:center;">
+        <h2>Wanderlust Roulette</h2>
+        <p style="margin-bottom:2rem;">Can't decide where to go? Select your trip profile parameters and roll the generator wheels.</p>
+        <div style="background:white; padding:2rem; border-radius:12px; text-align:left; margin-bottom:2rem;">
+            <div class="form-group">
+                <label>Vibe & Travel Style</label>
+                <select id="gen-type" class="form-control">
+                    <option value="adventure">Adventure & Sport</option>
+                    <option value="relaxation">Relaxation Resorts</option>
+                    <option value="cultural">Historical & Cultural</option>
+                    <option value="nature">Wilderness & Naturescapes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Budget Allocation Profile</label>
+                <select id="gen-budget" class="form-control">
+                    <option value="low">Budget Economy Saver</option>
+                    <option value="medium">Standard Mid-tier Travel</option>
+                    <option value="high">Premium Elite Luxury</option>
+                </select>
+            </div>
+            <button id="surprise-btn" class="btn-primary" style="width:100%;">Surprise Me Again!</button>
+        </div>
+        <div id="generator-result"></div>
+    </main>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Home</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link rel="manifest" href="../JSON/manifest.json">
+</head>
+<body id="home-view">
+    <header>
+        <div class="logo">TravelNest</div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="mood.html">Moods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Find Your Next Adventure</h1>
+                <p id="dynamic-quote" style="transition: opacity 0.4s ease; min-height:50px;">"The world is a book, and those who do not travel read only a page."</p>
+                <a href="explorer.html" class="btn-primary">Explore Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="../360_F_315088533_706xMSeuNJK4lnrTDvqRbcurHHkIubmr.jpg" alt="Hero Illustration">
+            </div>
+        </section>
+        <section style="background: white; padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+            <h2>Destination of the Day</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:2rem; margin-top:1rem;">
+                <img id="dod-img" src="../image 02.jpg" alt="Spotlight Content" style="max-width:300px; width:100%; object-fit:cover; border-radius:8px;">
+                <div>
+                    <h3 id="dod-title">Loading Spotlight...</h3>
+                    <p id="dod-desc" style="margin-bottom:1rem;"></p>
+                    <a href="explorer.html" class="btn-secondary">View Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div><h3>TravelNest</h3><p>Your companion tool for stress-free trip orchestration routines.</p></div>
+            <div>
+                <h3>Explore Links</h3>
+                <ul>
+                    <li><a href="planner.html">Budget Calculator</a></li>
+                    <li><a href="support.html">FAQ Helpdesk</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <form id="news-form" style="display:flex; gap:0.5rem;"><input type="email" id="news-email" class="form-control" placeholder="Email Address" required><button type="submit" class="btn-primary">Join</button></form>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 TravelNest. Educational Web Application.</div>
+    </footer>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

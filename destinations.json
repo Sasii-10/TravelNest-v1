@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Kyoto",
+        "country": "Japan",
+        "continent": "Asia",
+        "type": "cultural",
+        "budget": "medium",
+        "desc": "A preservation of historic Japanese legacy, home to sublime golden temples and bamboo forests.",
+        "attractions": ["Fushimi Inari Shrine", "Kinkaku-ji", "Arashiyama Bamboo Grove"],
+        "costs": { "stay": "$90/night", "food": "$30/day", "transport": "$12/day" },
+        "img": "../dsgdsg.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Santorini",
+        "country": "Greece",
+        "continent": "Europe",
+        "type": "relaxation",
+        "budget": "high",
+        "desc": "An island paradise known for cliffside whitewashed architecture and dramatic blue volcanic vistas.",
+        "attractions": ["Oia Village sunset", "Akrotiri Archaeological Site", "Red Beach"],
+        "costs": { "stay": "$210/night", "food": "$60/day", "transport": "$25/day" },
+        "img": "../image 02.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Banff",
+        "country": "Canada",
+        "continent": "North America",
+        "type": "nature",
+        "budget": "high",
+        "desc": "Stunning, snow-peaked Canadian Rockies paired with pristine, emerald glacial water channels.",
+        "attractions": ["Lake Louise", "Moraine Lake", "Banff Upper Hot Springs"],
+        "costs": { "stay": "$180/night", "food": "$45/day", "transport": "$30/day" },
+        "img": "../Lake-Moraine-in-Banff-Canada-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Chiang Mai",
+        "country": "Thailand",
+        "continent": "Asia",
+        "type": "adventure",
+        "budget": "low",
+        "desc": "A mountainous northern city boasting rich jungle sanctuaries, cultural night bazaars, and historic relics.",
+        "attractions": ["Wat Phra That Doi Suthep", "Elephant Nature Park", "Night Bazaar"],
+        "costs": { "stay": "$25/night", "food": "$12/day", "transport": "$5/day" },
+        "img": "../image 03.jpg"
+    }
+]
